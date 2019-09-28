@@ -2,9 +2,8 @@
 //  main.cpp
 //  cv2_testing_stuff
 //
-//  Created by Liam Brennan on 9/19/19.
-//  Copyright © 2019 Liam Brennan. All rights reserved.
-//
+//  Created by Liam Brennan
+
 
 #include <iostream>
 #include "opencv2/core/cvdef.h"
@@ -179,7 +178,7 @@ int main(int argc, const char * argv[]) {
     transparencyMask = buildMask(134, 134);
     
     Mat glass;
-    glass = imread("/Users/liam/workspace/opencv/cv2_testing_stuff/supplement_files/MUST_GLASS.png", IMREAD_UNCHANGED);
+    glass = imread("MUST_GLASS.png", IMREAD_UNCHANGED);
     
     Mat ROI(glass, Rect(width_glass - 500, 30, start_glass_w, start_glass_h));
     
